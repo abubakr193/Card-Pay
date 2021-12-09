@@ -1,0 +1,181 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Fraunces', 'Arial', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	background-color: rgb(141, 141, 44);
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+img {
+	vertical-align: middle;
+	object-fit: cover;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.money-transfer .container {
+    display: flex;
+    padding: 100px
+}
+
+/* Form */
+
+.form {
+    max-width: 300px;
+    width: 100%;
+    height: 449px;
+    overflow: auto;
+    padding: 40px;
+    background-color: rgb(248, 239, 239);
+}
+
+.form__heading {
+    margin: 0;
+    margin-bottom: 40px;
+    font-style: 25px;
+}
+
+.form__heading__plus-icon {
+    margin-left: 45px;
+}
+
+
+.form__input:checked + .form__controller {
+    border: 2px solid #295091;
+}
+
+.form__controller {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+
+.form__controller:hover {
+    border: 2px solid rgb(83, 83, 187);
+}
+
+
+.form__logo {
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form__number {
+    margin-bottom: 5px;
+}
+
+.form__text {
+    margin-bottom: 7px;
+}
+
+/* Balance */
+
+.balance {
+    max-width: 500px;
+    width: 100%;
+    height: 449px;
+    padding: 40px;
+    overflow: auto;
+    background-color: white;
+}
+
+.balance__info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(190, 176, 176);
+    
+}
+
+.balance__heading {
+    margin: 0;
+    font-size: 25px;
+}
+
+.balance__info__strong {
+    margin-left: auto;
+}
+
+.balance__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.balance__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.balance__item__box {
+    display: flex;
+    align-items: center;
+}
+
+.balance__icon {
+    border-radius: 50%;
+    border: 1px solid rgb(190, 182, 182);
+}
+
+.balance__item__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.balance__item__heading {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.balance__item__text {
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.balance__item__strong {
+    color: cornflowerblue;
+}
+
+.balance__item__strong--color {
+    color: rgb(51, 136, 51);
+}
